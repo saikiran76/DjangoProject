@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <!-- STYLING -->
+    <style>
+
+    .heading-container {
+    animation: highlight 2s ease-in-out;
+    transition: color 0.5s ease-in-out;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    .heading-container h1 {
+    padding: 20px;
+    }
+
+    @keyframes highlight {
+    0% {
+        background-color: #fff;
+    }
+    50% {
+        background-color: #000080;
+    }
+    100% {
+        background-color: #fff;
+    }
+    }
+
+
+    .heading-container:hover h1 {
+    color: #246e7e;
+    transition: color 0.5s ease-in-out;
+    }
+
+
+    
+    /* .main-heading {
+    animation: highlight 2s ease-in-out;
+    }
+
+ 
+    .main-heading:hover {
+    color: rgb(47, 0, 255);
+    transition: color 0.5s ease-in-out;
+    } */
+
+        body{
+            color: #000080;
+            font-family: monospace;
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+            background-image: url('../static/images/back.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container{
+           
+            margin: 10px;
+            padding: 10px 10px;
+            display: grid;
+            border: 3px solid #fff;
+            border-radius: 5px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 2fr 1fr;
+            gap: 7px;
+        }
+        .item{
+            color: #000080;
+            border-radius: 2.5%;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .item:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+        .item p{
+            padding-right: 10px;
+
+        }
+        .click{
+            height: 2px;
+            width: 5px;
+            background-color: #246e7e;
+            color: #fff;
+            border-radius: 2.5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="heading-container">
+        <h1 class="main-heading" style="text-align: center; margin-bottom: 70px;">ANALYTICS</h1>
+    </div>
+    
+
+    <!-- Deatiled analysis section -->
+    {% for row in rows %}
+    <div class="container">
+
+        <div class="item">{{row.short_url}}</div>
+        <div class="item">{{row.long_url}}</div>
+        <div class="item"><div><p style="display: inline; font-weight: bold;">Number of clicks <span class="click">{{row.clicks}}</span></div></div>
+        <div class="item">{{row.date}}</div>
+        
+    </div>
+
+    <br>
+    <br>
+
+    {% endfor %}
+    
+</body>
+</html>
