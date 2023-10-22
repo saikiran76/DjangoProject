@@ -2,6 +2,12 @@
 
 A stylish and efficient URL shortener web application built using the Django framework. This app allows users to easily shorten their long URLs into compact and shareable links. It provides a seamless redirection to the original URLs and tracks analytics for each shortened link. 
 
+<img width="904" alt="image" src="https://github.com/saikiran76/DjangoProject/assets/80874246/6c12145d-dd76-4f69-bfa3-3b805db0b49e">
+
+![Uploading image.png…]()
+
+
+
 ## Features
 
 - URL shortening: Easily generate unique and short URLs for long links.
