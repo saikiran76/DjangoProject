@@ -26,6 +26,7 @@ class Migration(migrations.Migration):
                 ("short_url", models.CharField(max_length=50, unique=True)),
                 ("date", models.DateField(auto_now_add=True)),
                 ("clicks", models.IntegerField(default=True)),
+                ("time", models.TimeField(auto_now_add=True))
             ],
         ),
     ]

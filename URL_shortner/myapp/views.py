@@ -25,12 +25,14 @@ def home_page(request):
             # READ
             date = obj.date
             clicks = obj.clicks
+            time = obj.time
             
             context['long_url'] = long_url
             context['short_url'] = request.build_absolute_uri() + custom_name
             context['date'] = date
             context['clicks'] = clicks
             context['submitted'] = True
+            context['time'] = time
         except:
             context['error'] = True
         

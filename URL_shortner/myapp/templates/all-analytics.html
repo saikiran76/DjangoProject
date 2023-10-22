@@ -29,6 +29,7 @@
 					<p class="url_link">
 						{{row.long_url}}
 					</p>
+					<p class="data_link">{{ row.time|time:"H:i:s" }}</p>
 					<p id="link" class="link_element">
 						<a href="/analytics/{{ rows.short_url }}" class="short_url_l" target="blank">
 							{{row.short_url}}</a>
