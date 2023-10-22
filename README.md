@@ -23,8 +23,9 @@ A stylish and efficient URL shortener web application built using the Django fra
 ## Installation
 
 1. Clone the repository.
-2. Run migrations using `python manage.py migrate`.
-3. Start the development server with `python manage.py runserver`.
+2. cd into URL_shortner folder
+3. Run migrations using `python manage.py migrate`.
+4. Start the development server with `python manage.py runserver`.
 
 ## Usage
 
