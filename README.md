@@ -4,8 +4,7 @@ A stylish and efficient URL shortener web application built using the Django fra
 
 <img width="904" alt="image" src="https://github.com/saikiran76/DjangoProject/assets/80874246/6c12145d-dd76-4f69-bfa3-3b805db0b49e">
 
-![Uploading image.png…]()
-
+<img width="895" alt="image" src="https://github.com/saikiran76/DjangoProject/assets/80874246/477a0aff-b24d-412f-ad55-ae139e41a971">
 
 
 ## Features
