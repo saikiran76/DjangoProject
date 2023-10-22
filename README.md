@@ -4,8 +4,7 @@ A stylish and efficient URL shortener web application built using the Django fra
 
 <img width="904" alt="image" src="https://github.com/saikiran76/DjangoProject/assets/80874246/6c12145d-dd76-4f69-bfa3-3b805db0b49e">
 
-![Uploading image.png…]()
-
+<img width="895" alt="image" src="https://github.com/saikiran76/DjangoProject/assets/80874246/477a0aff-b24d-412f-ad55-ae139e41a971">
 
 
 ## Features
@@ -24,8 +23,9 @@ A stylish and efficient URL shortener web application built using the Django fra
 ## Installation
 
 1. Clone the repository.
-2. Run migrations using `python manage.py migrate`.
-3. Start the development server with `python manage.py runserver`.
+2. cd into URL_shortner folder
+3. Run migrations using `python manage.py migrate`.
+4. Start the development server with `python manage.py runserver`.
 
 ## Usage
 
